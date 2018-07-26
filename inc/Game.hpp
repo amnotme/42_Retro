@@ -42,21 +42,21 @@ public:
 
 	uint64_t			getTicks(void) const;
 	uint8_t				getTicksPerSecond(void) const;
-	void				setTicksPerSecond(uint8_t tps);
-	void				loop(void);
+	void					setTicksPerSecond(uint8_t tps);
+	void					loop(void);
 
 private:
 
-	void				_init(int tps);
-	void				_processInput(int key);
-	t_timespec			_timeDiff(t_timespec t1, t_timespec t2);
+	void					_init(int tps);
+	void					_processInput(int key);
+	t_timespec		_timeDiff(t_timespec t1, t_timespec t2);
 
-	static Game 		*_game;
+	static Game 	*_game;
 	Player				*_player;
 	Window				*_win;
-	t_timespec			_tick_delay;
+	t_timespec		_tick_delay;
 	uint64_t			_ticks;
 	uint8_t				_tps;
-	bool				_run;
+	bool					_run;
 };
 #endif

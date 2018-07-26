@@ -10,6 +10,25 @@
 	characters on your terminal, so that the entities of your game are each represented by a
 	character on screen.
 
+### Cloning and running project
+```
+cd ~/Desktop &&
+git clone https://github.com/amnotme/42_Retro.git &&
+cd 42_Retro && 
+make
+```
+
+you will notice the executable **ft_retro**
+to run simply ```./ft_retro```
+
+### Mechanics
+```
+use the directional arrows to move around the screen
+use spacebar to shoot
+use 'q' to quit program.
+```
+
+
 ###### Basic Requirements
 
 - [x] Single-player

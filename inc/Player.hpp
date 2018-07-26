@@ -30,10 +30,10 @@ class	Player : public Entity
 	int		getScore(void) const;
 	void	setScore(int score);
 
-    void	moveLeft(void);
-    void	moveRight(void);
-    void	moveUp(void);
-    void	moveDown(void);
+  void	moveLeft(void);
+  void	moveRight(void);
+  void	moveUp(void);
+  void	moveDown(void);
 
   private:
 

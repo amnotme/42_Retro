@@ -32,26 +32,26 @@ public:
 	Window		&operator=(Window const &obj);
 
 	Game const	&getGame(void) const;
-	WINDOW		*getView(void) const;
+	WINDOW			*getView(void) const;
 
-	void		drawEntity(Entity const &ent);
-	void		drawStars(void);
-	void		updateBorders(void) const;
-	void		redraw(void) const;
+	void				drawEntity(Entity const &ent);
+	void				drawStars(void);
+	void				updateBorders(void) const;
+	void				redraw(void) const;
 
-	int 		getCols(void) const;
-	int			getLines(void) const;
+	int 				getCols(void) const;
+	int					getLines(void) const;
 
 private:
 
-	void		_init(void);
-	void		_generateStars(void);
-	void		_generateStarLine(std::string &line) const;
+	void				_init(void);
+	void				_generateStars(void);
+	void				_generateStarLine(std::string &line) const;
 
 	Game const	&_game;
-	int 		_nlines;
-	int 		_ncols;
+	int 				_nlines;
+	int 				_ncols;
 	std::string	*_stars;
-	WINDOW 		*_win;
+	WINDOW 			*_win;
 };
 #endif

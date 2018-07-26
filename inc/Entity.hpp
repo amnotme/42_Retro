@@ -34,8 +34,8 @@ class	Entity
     int         		getPosY( void ) const;
     int         		getSpeed( void ) const;
     char const *const	*getSprite( void ) const;
-	int					getSpriteLength(void) const;
-	int					getSpriteWidth(void) const;
+	  int				    	getSpriteLength(void) const;
+    int				     	getSpriteWidth(void) const;
 
     //setters
     void        		setHp( int const hp );
@@ -44,29 +44,29 @@ class	Entity
     void        		setSpeed( int const speed );
 
     bool        		canMove( void ) const;
-	int					getDir(void) const;
-	void				setDir(int dir);
-	int					advance(void);
+    int				     	getDir(void) const;
+    void			     	setDir(int dir);
+    int				     	advance(void);
 
 	Projectile *const	*getBullets(void) const;
-	int					getNumBullets(void) const;
-	void				removeBullet(void);
+    int				     	getNumBullets(void) const;
+    void		    		removeBullet(void);
     bool        		canShoot( void ) const;
-	void				shoot(int dir);
+    void		    		shoot(int dir);
 
   protected:
 
-    int					_hp;
-	int					_dir;
+    int					    _hp;
+	  int				     	_dir;
     int         		_posX;
     int         		_posY;
     int         		_speed;
     char const			*_sprite[5];
-	int					_spriteLength;
-	int					_spriteWidth;
-	Projectile			*_bullets[25];
-	int					_nbullets;
-    uint64_t			_move;
+	  int					    _spriteLength;
+	  int					    _spriteWidth;
+	Projectile		   	*_bullets[25];
+	  int					    _nbullets;
+    uint64_t		   	_move;
     uint64_t    		_shoot;
 };
 
