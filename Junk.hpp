@@ -1,28 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Rock.cpp                                           :+:      :+:    :+:   */
+/*   Junk.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lhernand <lhernand@student.42.us.or>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/07/01 01:58:30 by lhernand          #+#    #+#             */
-/*   Updated: 2018/07/02 05:21:17 by sgardner         ###   ########.fr       */
+/*   Created: 2019/01/27 15:05:10 by lhernand          #+#    #+#             */
+/*   Updated: 2019/01/27 15:05:11 by lhernand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Game.hpp"
 
-Rock::Rock(void)
-{
-	this->setSpeed(45);
-	this->_sprite[0] = " # ";
-	this->_sprite[1] = "###";
-	this->_sprite[2] = " # ";
-	this->_spriteLength = 3;
-	this->_spriteWidth = 3;
-}
+#ifndef JUNK_HPP
+# define JUNK_HPP
 
-Rock::~Rock( void )
+class Junk
 {
-	return ;
-}
+	public:
+		Junk(void);
+		~Junk(void);
+		Junk(Junk const & src);
+		Junk &operator=(Junk const & rhs);
+
+		int 			getX(void) const;
+		int			getY(void) const;
+		int 			getN(void) const;
+
+		void 		setN(int N);
+		void 		setX(int x);
+		void 		setY(int y);
+
+	protected:
+		int			x;
+		int			y;
+		int 			N;
+};
+#endif
