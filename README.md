@@ -23,9 +23,9 @@ to run simply ```./ft_retro```
 
 ### Mechanics
 ```
-use the directional arrows to move around the screen
+use the key '4' to move left and '6' to move right
 use spacebar to shoot
-use 'q' to quit program.
+use 'esc' key to quit program.
 ```
 
 
@@ -35,18 +35,18 @@ use 'q' to quit program.
 - [x] Display using the ```ncurses```  library
 - [x] Horizontal or vertical scrolling (The screen area moves through the world, very
 	much like in R-Type for example)
-- [ ] Random enemies
+- [x] Random enemies
 - [x] The player can shoot at enemies
-- [ ] Basic collision handling (If an enemy touches you, you die)
-- [ ] Game entities occupy one ’square’ of the map only.
+- [x] Basic collision handling (If an enemy touches you, you die)
+- [x] Game entities occupy one ’square’ of the map only.
 - [x] Frame-based timing
 
 ###### Game Dynamics
 
 - [x] Acquire input (Player controls, network, etc ...)
-- [ ] Update game entities
+- [x] Update game entities
 - [x] Render display
-- [ ] Repeat until game ends !
+- [x] Repeat until game ends !
 
 
 ###### Essential Features Before Bonus Implementation
